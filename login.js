@@ -1,21 +1,17 @@
-// La función que maneja la lógica de inicio de sesión
+
 function validarLogin(event) {
-  // Previene el envío del formulario por defecto (evita la recarga)
-  event.preventDefault();
+    event.preventDefault();
+    const CLAVE_SECRETA = "perrito3";
+    const passwordInput = document.getElementById("password").value;
+    if (passwordInput === CLAVE_SECRETA) { 
+        alert("¡Acceso concedido! Bienvenido.");
+        localStorage.setItem('isLoggedIn', 'true'); 
+        window.location.href = "index.html";
 
-  // Clave estática para la demo
-  const CLAVE_SECRETA = "perrito3";
-  const passwordInput = document.getElementById("password").value;
+    } else {
+        alert("Clave incorrecta. Inténtalo de nuevo.");
+        document.getElementById("password").value = "";
+    }
 
-  // 2. Realizar la verificación
-  if (passwordInput.toLowerCase() === CLAVE_SECRETA) {
-    alert("¡Acceso concedido! Bienvenido.");
-    // Redirige a tu página principal
-    window.location.href = "index.html";
-  } else {
-    alert("Clave incorrecta. Inténtalo de nuevo.");
-    document.getElementById("password").value = "";
-  }
-
-  return false;
+    return false;
 }
