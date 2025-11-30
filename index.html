@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
+    <title>Mi pagina Web</title>
+  </head>
+  <body>
+    <header>
+      <nav class="Top-header">
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <h1>Healthy</h1>
+        <ul class="Menu-Inicio">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="Cont-General">
+        <div class="Cont-texto-1">
+          <h2>Bienvenido a healthy</h2>
+          <p>
+            ¡Bienvenido a Healthy! Somos más que una aplicación somos tu
+            compañero dedicado en el viaje hacia una vida más plena y
+            equilibrada. Nos enfocamos en el bienestar integral, abarcando tanto
+            tu salud física como tu paz mental.
+          </p>
+        </div>
+        <div class="Botones">
+          <a href="" class="Boton-inicia-aqui">Inicia aquí</a>
+          <a href="" class="Boton-Ver-Video">Ver Video Introductorio</a>
+        </div>
+      </section>
+      <section class="Cont-Beneficios">
+        <div class="Cont-texto">
+          <h2>Beneficios Con Nostros</h2>
+          <p>
+            Con Healthy, tienes el poder de llevar tu progreso al siguiente
+            nivel. Monitoriza tus pasos, gestiona tu nutrición, optimiza tu
+            sueño y alcanza tus metas de forma inteligente y motivadora. Tu
+            transformación digital y física empieza ahora.
+          </p>
+        </div>
+        <div class="Cont-Video">
+          <iframe
+            width="440"
+            height="320"
+            src="https://www.youtube.com/embed/_JDOGSkVMNY"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <div class="Cont-Imagenes-Principales">
+        <section class="Cont-imagenes">
+          <div class="cont-img1">
+            <img src="imagenes/img-1-convertido-a-120x120.jpeg" alt="" />
+            <h2>ALIMENTACION</h2>
+            <p>Ayudamos a tu salud alimenticia</p>
+          </div>
+          <div class="cont-img2">
+            <img src="imagenes/img-2-convertido-a-100x130.jpeg" alt="" />
+            <h2>Sueño</h2>
+            <p>Ayudamos con tu horas de domrir</p>
+          </div>
+          <div class="cont-img3">
+            <img src="imagenes/img-corazon-convertido-a-120x100.jpeg" alt="" />
+            <h2>SALUD</h2>
+            <p>Ayudamos con tus ejercicios diarios</p>
+          </div>
+        </section>
+      </div>
+      <section class="Cont-Formulario">
+        <form class="Cont-Formulario-2" action="">
+          <h2>
+            ¡Completa los siguientes datos de manera sencilla para poder
+            registrarte!
+          </h2>
+          <fieldset>
+            <legend>Informacion Basica</legend>
+            <div class="Formulario-Nombre">
+              <label for="">Nombre</label>
+              <input
+                type="text"
+                title="name"
+                placeholder="Escribe tu nombre"
+                required
+              />
+              <label for="">Apellidos</label>
+              <input
+                type="text"
+                title="lastname"
+                placeholder="Escribe tus Apellidos"
+                required
+              />
+              <label for="">Correo electronico</label>
+              <input
+                type="email"
+                title="email"
+                placeholder="Escribe tus correo-electronico"
+                required
+              />
+            </div>
+            <div class="formulario-pais">
+              <label class="titulo-pais">Cual es tu genero:</label>
+              <label class="opcion"
+                >Masculino <input type="radio" name="sexo" required
+              /></label>
+              <label class="opcion"
+                >Femenino <input type="radio" name="sexo" required
+              /></label>
+            </div>
+
+            <div class="Forumulario-Genero">
+              <label for="">Selecciona tu pais</label>
+              <select name="" id="" required>
+                <option value="" disabled selected>--Selecciona--</option>
+                <option value="Genero">Peru</option>
+                <option value="Genero">Chile</option>
+                <option value="Genero">Venzuela</option>
+                <option value="Genero">Colombia</option>
+                <option value="Genero">Argentina</option>
+                <option value="Genero">Mexico</option>
+              </select>
+            </div>
+            <button class="Boton" type="submit">Registrarse</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="Cont-Footer">
+        <div class="Cont-Legal-y-soporte">
+          <h3>Legal y Soporte</h3>
+          <p><a href="">Términos y Condiciones</a></p>
+          <p><a href="">Políticas de Privacida</a></p>
+          <p><a href="">Preguntas Frecuentes (FAQ)</a></p>
+          <p><a href="">Contactar Soporte Técnico</a></p>
+        </div>
+        <div class="Cont-Marca-y-Contacto">
+          <h3>Marca y Contacto</h3>
+          <p>Healthy. Tu compañero de bienestar.</p>
+          <p>contacto@healthyapp.com</p>
+          <p>+51 987 654 321</p>
+          <p>© 2025 Healthy. Todos los derechos reservados.</p>
+        </div>
+        <div class="Cont-Comunidad-y-Redes">
+          <h3>Comunidad y Redes</h3>
+          <p><a href="">Instagram</a></p>
+          <p><a href="">Facebook</a></p>
+          <p><a href="">Twitter</a></p>
+          <p>¡Únete a la Causa!</p>
+        </div>
+      </div>
+    </footer>
+    <script src="menu_toggle.js"></script>
+  </body>
+</html>

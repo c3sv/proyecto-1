@@ -1,0 +1,37 @@
+/* --- ESTILOS DE ESCRITORIO (Definidos en style.css, se OCULTA el botón) --- */
+.menu-toggle {
+  display: none; /* Oculto por defecto en desktop */
+  color: white; /* Para que se vea en el header */
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px; /* Separación del logo/título */
+}
+
+/* --- ESTILOS DE MÓVIL (Activan el botón y ocultan el menú horizontal) --- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .Menu-Inicio {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #10970c;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    z-index: 90;
+  }
+
+  .Menu-Inicio.active {
+    display: flex;
+  }
+
+  .Top-header {
+    justify-content: space-between;
+  }
+}
