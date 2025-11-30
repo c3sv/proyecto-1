@@ -161,5 +161,11 @@
       </div>
     </footer>
     <script src="menu_toggle.js"></script>
+    <script>
+    if (localStorage.getItem('isLoggedIn') !== 'true') {
+        window.location.replace('login.html'); 
+    }
+    </script>
   </body>
 </html>
+
